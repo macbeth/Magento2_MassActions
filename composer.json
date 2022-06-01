@@ -15,6 +15,7 @@
       }
     },
    "repositories": [
-       { "type": "git", "url": "https://github.com/macbeth/Magento2_MassActions.git" }
+       { "type": "vcs",
+	 "url": "https://github.com/macbeth/Magento2_MassActions.git" }
    ]
 }
