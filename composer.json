@@ -2,7 +2,6 @@
     "name":"piantanida/massactions",
     "description": "A module to perform mass actions on prices and catalog in Magento2 admin area",
     "type": "magento2-module",
-    "version": "2.3.7",
     "license": [
       "MIT"
     ],
