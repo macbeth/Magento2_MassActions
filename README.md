@@ -1,6 +1,6 @@
-# Magento2_MassActions
+# Piantanida_MassActions
 
-A module to perform mass actions on catalog.
+A module to perform mass actions on Magento2 catalog.
 
 Current Features:
 
