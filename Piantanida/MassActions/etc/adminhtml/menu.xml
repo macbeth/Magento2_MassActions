@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+      <add id="Piantanida_MassActions::massactions" 
+           title="Mass Actions" 
+           translate="title" 
+           module="Piantanida_MassActions" 
+           parent="Magento_Catalog::catalog" 
+           sortOrder="50" 
+           dependsOnModule="Piantanida_MassActions" 
+           resource="Piantanida_MassActions::massaction"/>
+        
+      <add id="Piantanida_MassActions::masspriceupdater2" 
+           title="Update Prices" 
+           translate="title" 
+           module="Piantanida_MassActions" 
+           parent="Piantanida_MassActions::massactions" 
+           sortOrder="10" 
+           dependsOnModule="Piantanida_MassActions" 
+           action="massactions/massactions" 
+           resource="Piantanida_MassActions::massactions_priceupdate"/>
+    </menu>
+</config>

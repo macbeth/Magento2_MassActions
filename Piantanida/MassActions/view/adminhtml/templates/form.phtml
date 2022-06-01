@@ -1,0 +1,59 @@
+<?php
+
+use Magento\Framework\Data\Form\FormKey;
+
+$data = $block->getData();
+$keyValue = $block->getData('key');
+$url = $block->getData('url');
+
+//echo "this" . $block->getFormKey();
+/*<input hidden="key" key="<?=$keyValue?>" />*/
+?>
+<style>
+    .mass-price-updater-help {
+        margin: 0.7rem 0;
+        background: #f5f5f5;
+        padding: 0.7rem;
+        border: 1px solid #ddd;
+        display: block;
+    }
+    
+    .mass-price-updater-form { }
+    .mass-price-updater-button { margin: 0.7rem 0; }    
+    .mass-price-updater-textarea { }
+</style>
+
+<p>Paste in the textarea below the pairs sku - price from Excel.</p>
+<p>Prices can have [.] or [,] as decimal separator.</p>
+<p>Do NOT paste numbers with thousand separator.</p>
+
+<code class="mass-price-updater-help">
+    <b>Example:</b><br />
+    4719072812119   10.24<br />
+    4719072812117   105.99<br />
+    4719072812115   7.24
+</code>
+    
+<form method="POST" enctype="multipart/form-data" class="mass-price-updater-form" action="<?php echo $block->getUrl('massactions/massactions/post'); ?>" > 
+<input name="form_key" type="hidden" value="<?php echo $block->getFormKey();?>">
+<button type="submit" class="mass-price-updater-button method-default primary">Mass Update</button><br />
+<textarea class="mass-price-updater-textarea" rows="10" cols="50" name="skuprice" placeholder="Insert the codes with the following format (space is tab)
+                                                                                               
+4719072812119   10.24
+4719072812117   105.99
+4719072812115   7.24
+"></textarea>
+</form>
+
+<!--
+massactions/post : <?php echo $block->getUrl('massactions/massactions/post'); ?>
+<br />
+<br />
+
+base url <?php echo $block->getBaseUrl(); ?>
+<br />
+<br />
+
+<?=print_r($data)?>
+
+--> 
