@@ -9,7 +9,10 @@ Mass Price Changes with a copy / paste from Excel.
 ## Install
 
 Enable the module
-php bin/magento module:enable Piantanida_MassActions
+
+    php bin/magento module:enable Piantanida_MassActions
 
 Upgrade Database Schema
-php bin/magento setup:upgrade
+
+    php bin/magento setup:upgrade
+   
