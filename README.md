@@ -7,6 +7,8 @@ Current Features:
 Mass Price Changes with a copy / paste from Excel.
 
 ## Install
+Download with composer
+    composer require piantanida/massactions
 
 Enable the module
 
