@@ -1,3 +1,4 @@
+
 # Piantanida_MassActions
 
 A module to perform mass actions on Magento2 catalog.
@@ -8,6 +9,7 @@ Mass Price Changes with a copy / paste from Excel.
 
 ## Install
 Download with composer
+
     composer require piantanida/massactions
 
 Enable the module
